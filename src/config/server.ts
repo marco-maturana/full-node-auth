@@ -1,11 +1,14 @@
 import express from 'express';
+import apollo from './apollo';
 
-const server = express();
+const app = express();
 
 const APP_PORT = process.env.NODE_ENV || 8000;
 
-server.get('/api', (_req, res) => res.json({message: 'ok'}));
+apollo.applyMiddleware({ app, path: '/graphql' });
 
-export default server.listen(APP_PORT, () => {
+app.get('/api', (_req, res) => res.json({message: 'ok'}));
+
+export default app.listen(APP_PORT, () => {
   console.log(`O Servidor esta executando na porta ${APP_PORT}!`);
 });
