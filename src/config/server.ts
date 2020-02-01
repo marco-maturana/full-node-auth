@@ -1,9 +1,14 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import apollo from './apollo';
 
+const config = dotenv.config();
+
+if (config.error) throw new Error('Could not load the configuration file!');
+
 const app = express();
 
-const APP_PORT = process.env.NODE_ENV || 8000;
+const APP_PORT = process.env.APP_PORT || 8000;
 
 apollo.applyMiddleware({ app, path: '/graphql' });
 
