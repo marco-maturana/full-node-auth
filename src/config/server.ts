@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
-import apollo from './apollo';
+import apollo from '@config/apollo';
 
 const config = dotenv.config();
 

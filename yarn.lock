@@ -1162,6 +1162,10 @@ minimist@^1.2.0:
   version "1.2.0"
   resolved "https://npm.goodeggs.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
+module-alias@^2.2.2:
+  version "2.2.2"
+  resolved "https://npm.goodeggs.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://npm.goodeggs.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"

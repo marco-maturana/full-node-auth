@@ -10,11 +10,12 @@
     "moduleResolution": "node",
     "sourceMap": false,
     "outDir": "dist",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "removeComments": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "paths": {
+      "@config/*": ["config/*"],
       "*": [
         "node_modules/*"
       ]

@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server-express');
+import { ApolloServer, gql } from 'apollo-server-express';
 
 const typeDefs = gql`
   type Query {
