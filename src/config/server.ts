@@ -1,10 +1,13 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import apollo from '@config/apollo';
+import database from '@config/database';
 
 const config = dotenv.config();
 
 if (config.error) throw new Error('Could not load the configuration file!');
+
+database()
 
 const app = express();
 
