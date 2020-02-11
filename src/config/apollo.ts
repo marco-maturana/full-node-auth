@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import User, { IUser } from '@models/user';
 import { verifyToken } from '@services/auth';
-import { typeDefs, resolvers } from '@graphql/index';
+import { typeDefs, resolvers, schemaDirectives } from '@graphql/index';
 
 export interface ApolloContext {
   req: Request;
@@ -26,4 +26,4 @@ const context = async ({req, res}: {req: Request, res: Response}) => {
   return {req, res};
 }
 
-export default new ApolloServer({ context, typeDefs, resolvers });
+export default new ApolloServer({ context, typeDefs, resolvers, schemaDirectives });
