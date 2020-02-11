@@ -16,7 +16,9 @@
     "emitDecoratorMetadata": true,
     "paths": {
       "@config/*": ["config/*"],
+      "@graphql/*": ["graphql/*"],
       "@models/*": ["models/*"],
+      "@services/*": ["services/*"],
       "*": [
         "node_modules/*"
       ]

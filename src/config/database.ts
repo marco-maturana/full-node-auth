@@ -9,6 +9,6 @@ export default function database(): void {
 
   connection.on('error', console.error.bind(console, 'connection error:'));
   connection.once('open', function() {
-    console.log(`Connected with database using the connection striong ${process.env.MONGO_CONNECTION}`);
+    console.log(`Connected with database using the connection string ${process.env.MONGO_CONNECTION}`);
   });
 }
